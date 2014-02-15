@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-mongoose.connect('mongodb://localhost:17958/beers');
+mongoose.connect('mongodb://manoel:Getthere17@localhost:17958/beers');
 
 var db = mongoose.connection;
 
