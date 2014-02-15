@@ -1,0 +1,22 @@
+h2 Cadastro de cervejas
+
+    p {{ msg }}
+
+    form(
+        action='',
+        method="post")
+        label
+            input(type="text", placeholder="Nome", data-ng-model="cerveja.name")
+
+        label
+            input(type="text", placeholder="Categoria", data-ng-model="cerveja.category")
+
+        label
+            input(type="text", placeholder="Alcool", data-ng-model="cerveja.alcohol")
+
+        label
+            input(type="text", placeholder="Descrição", data-ng-model="cerveja.description")
+
+        button(data-ng-click="atualizar()") ATUALIZAR
+        button(data-ng-click="deletar()") DELETAR
+

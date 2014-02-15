@@ -1,0 +1,21 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    h2 Hello Workshop be mean
+    ul.menu
+      li
+        a(href='beer') Listar
+      li
+        a(href='beer/create') Cadastrar
+      li
+        a(href='beer/update') atualizar
+
+    div(ng-view)
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')

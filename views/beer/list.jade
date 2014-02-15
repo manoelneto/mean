@@ -1,0 +1,8 @@
+h2 Listagem de cervejas
+
+    br
+    input(type="text", placeholder="pesquisa", data-ng-model="pesquisa.description", data-ng-class="{cara: beer.price < 50}")
+    ul
+        li(data-ng-repeat='beer in cervejas | orderBy:predicate | filter:pesquisa')
+            | {{ beer.name }} - {{ beer.description }} - {{ beer.alcohol }}
+            a(href="/beer/{{ beer._id }}") Editar
